@@ -449,6 +449,137 @@
     background: linear-gradient(90deg, #c9a030, #b8901c);
     height: 8px;
   }
+
+/* MOBILE OPTIMIERUNG */
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 8px 12px;
+    font-size: 8px;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+  }
+
+  nav {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .logo {
+    font-size: 28px;
+    order: -1;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .hero-text {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-sub {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-products {
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .choco-card {
+    width: 30%;
+    min-width: 90px;
+  }
+
+  .usp-bar {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .product-grid,
+  .editorial-grid,
+  .footer-grid,
+  .golden-ticket {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid,
+  .editorial-grid {
+    margin: 0 15px 40px;
+  }
+
+  .section-header {
+    padding: 40px 20px 25px;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
+  }
+
+  .formats-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .ticket-text {
+    padding: 25px 20px;
+    text-align: center;
+  }
+
+  .ticket-card-design {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  footer {
+    padding: 40px 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .choco-card {
+    width: 45%;
+  }
+
+  .usp-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .product-name {
+    font-size: 18px;
+  }
+}
+
 </style>
 </head>
 <body>
